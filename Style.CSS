@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+header{
+    background-color:rgb(4, 203, 230);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+.title{
+    font-size:26px;
+    margin:0;
+}
+
+section{
+    background-image:url(./Images/images/people.jpg);
+    overflow:hidden;
+    background-size: cover;
+}
+
+.formcontainer{
+    background-color:rgb(245,243,242,0.7);
+    float:right;
+    max-width:230px;
+    padding:15px;
+}
+
+h2{
+    font-size:17px;
+}
+
+.mb{
+    margin-bottom:15px;  
+}
+
+input,select{
+    border-style: none;
+    box-sizing:border-box;
+    margin-bottom:10px;
+    padding:15px;
+    width:100%;  
+}
+
+input[type=submit] {
+    background-color:rgb(4, 203, 230);
+    color:White;
+    font-weight:bold;
+}
+
+select{
+    -moz-appearance: none;
+    /* Para fazer a mudança no firefox. */
+    -webkit-appearance: none;
+    /* Para fazer a mudança no Safari e no Chrome */
+    appearance:none;
+    /* Para fazer a mudança em todos. */
+
+    background-image:url(./Images/images/arrow.jpg);
+    background-repeat:no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y:center;
+}
+
+footer{
+    background-color:rgb(51, 46, 46);
+    padding:30px;
+    text-align:center;
+}
+
+.face{
+    width:160px;
+    
+}
+
+.description{
+    color:white;
+    display:inline-block;
+    max-width:40%;
+    margin-left:40px;
+    text-align:justify;
+}
+
+.description h3, .description p{
+    margin-bottom:15px;
+
+}
+
+h3{
+    font-size:20px;
+
+}
+
+@media screen and (max-width:790px) {
+
+.formcontainer{
+    float:none;
+    margin:auto;
+    max-width:350px;
+}
+
+.title{
+    font-size:3vw;
+}
+
+h2, .mb{
+    font-size:1em;
+}
+
+.face{
+    width:150px;
+}
+
+.description{
+    max-width:80%;
+    margin-top:15px;
+    text-align:start;
+}
+}
+
+@media screen and (max-width:420px) {
+    .title{
+        font-size:16px;
+    }
+
+    h2, .mb{
+        font-size:14px;
+        text-align:left;
+    }
+
+    .face{
+        width:120px;
+    }
+
+    .description{
+        margin-left:35px;
+        margin-top:15px;
+        max-width:90%;
+        text-align:start;
+    }
+
+}
